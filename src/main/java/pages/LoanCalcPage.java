@@ -21,25 +21,11 @@ public class LoanCalcPage {
         this.objReader = new ObjectReader(); 
     }
 
-    /**
-     * Precise scroll using coordinates and a custom offset.
-     * Use a negative offset (e.g., -100) to stop the scroll earlier (higher up).
-     * Use a positive offset (e.g., 50) to scroll further down.
-     */
+  
     public void scrollToHeader() {
-        WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath(objReader.getObjectValue("calcHeading"))));
-        
+        WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(objReader.getObjectValue("calcHeading"))));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        
-        // Adjust '-100' to whatever number fits your exact visual requirement
-        // A value of -100 usually leaves enough room for a sticky top navigation bar
-        int yOffset = -100; 
-        
-        jse.executeScript(
-            "window.scrollTo({ top: arguments[0].getBoundingClientRect().top + window.pageYOffset + " + yOffset + ", behavior: 'smooth' });", 
-            header
-        );
+        jse.executeScript("arguments[0].scrollIntoView(true);", header);
     }
 
     public void enterLoanDetails(String amt, String tenure, String rate) {

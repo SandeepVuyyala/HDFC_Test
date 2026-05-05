@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -16,16 +15,15 @@ public class ObjectReader {
             // Path matches the structure shown in your project tree
             fis = new FileInputStream("ObjectRepository/Object.properties");
             properties.load(fis);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
+        }  finally {
             try {
-                if (fis != null) fis.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+				fis.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
     }
     

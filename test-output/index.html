@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\2478499\AppData\Local\Temp\testng-eclipse--570962086\testng-customsuite.xml</span>
+                    <span>C:\Users\2478499\AppData\Local\Temp\testng-eclipse--1971058252\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.TestMain" class="method navigator-link" hash-for-method="calculateHomeLoan">calculateHomeLoan</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.TestMain" class="method navigator-link" hash-for-method="testExcelDataExport">testExcelDataExport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.TestMain" class="method navigator-link" hash-for-method="testHomeLoanCalculation">testHomeLoanCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.TestMain" class="method navigator-link" hash-for-method="testHomeLoanPageurl">testHomeLoanPageurl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.TestMain" class="method navigator-link" hash-for-method="testInputUpdateValidation">testInputUpdateValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +141,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="calculateHomeLoan">
-                  </a> <!-- calculateHomeLoan -->
-                  <span class="method-name">calculateHomeLoan</span>
+                  <a name="testExcelDataExport">
+                  </a> <!-- testExcelDataExport -->
+                  <span class="method-name">testExcelDataExport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomeLoanCalculation">
+                  </a> <!-- testHomeLoanCalculation -->
+                  <span class="method-name">testHomeLoanCalculation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomeLoanPageurl">
+                  </a> <!-- testHomeLoanPageurl -->
+                  <span class="method-name">testHomeLoanPageurl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInputUpdateValidation">
+                  </a> <!-- testInputUpdateValidation -->
+                  <span class="method-name">testInputUpdateValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2478499\AppData\Local\Temp\testng-eclipse--570962086\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\2478499\AppData\Local\Temp\testng-eclipse--1971058252\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,16 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'calculateHomeLoan')
+data.setCell(0, 1, 'testHomeLoanCalculation')
 data.setCell(0, 2, 'test.TestMain')
-data.setCell(0, 3, 11312);
+data.setCell(0, 3, 3849);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInputUpdateValidation')
+data.setCell(1, 2, 'test.TestMain')
+data.setCell(1, 3, 3100);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testExcelDataExport')
+data.setCell(2, 2, 'test.TestMain')
+data.setCell(2, 3, 2465);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testHomeLoanPageurl')
+data.setCell(3, 2, 'test.TestMain')
+data.setCell(3, 3, 1216);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -226,12 +274,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">calculateHomeLoan</span>
-                <span class="method-start">14177 ms</span>
+                <span class="method-name">testHomeLoanPageurl</span>
+                <span class="method-start">4957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomeLoanCalculation</span>
+                <span class="method-start">6187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExcelDataExport</span>
+                <span class="method-start">10041 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInputUpdateValidation</span>
+                <span class="method-start">12520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25639 ms</span>
+                <span class="method-start">15767 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class ExcelWriter {
 
-    public static void writeResultsToExcel(String emi, String interest, String principal) throws IOException {
+    public static void writeResultsToExcel(String emi, String interest, String principal) {
         Workbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet("Loan Results");
 
@@ -32,7 +32,16 @@ public class ExcelWriter {
 
         try (FileOutputStream fileOut = new FileOutputStream("test-output-data/LoanResults.xlsx")) {
             workbook.write(fileOut);
-        }
-        workbook.close();
+        } catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			workbook.close();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
     }
-}
+    }
+
