@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-29T09:07:22 IST" name="Default suite" finished-at="2026-04-29T09:07:41 IST" duration-ms="19363">
+  <suite started-at="2026-05-05T12:11:15 IST" name="Default suite" finished-at="2026-05-05T12:11:27 IST" duration-ms="11403">
     <groups>
     </groups>
-    <test started-at="2026-04-29T09:07:22 IST" name="Default test" finished-at="2026-04-29T09:07:41 IST" duration-ms="19363">
-      <class name="homeloan_hdfc.Test_HomeLoan">
-        <test-method is-config="true" signature="setup()[pri:0, instance:homeloan_hdfc.Test_HomeLoan@2f4948e4]" started-at="2026-04-29T09:07:22 IST" name="setup" finished-at="2026-04-29T09:07:31 IST" duration-ms="8917" status="PASS">
+    <test started-at="2026-05-05T12:11:15 IST" name="Default test" finished-at="2026-05-05T12:11:27 IST" duration-ms="11403">
+      <class name="test.TestMain">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestMain@489115ef]" started-at="2026-05-05T12:11:01 IST" name="setUp" finished-at="2026-05-05T12:11:15 IST" duration-ms="14100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="calculateHomeLoan()[pri:0, instance:homeloan_hdfc.Test_HomeLoan@2f4948e4]" started-at="2026-04-29T09:07:31 IST" name="calculateHomeLoan" finished-at="2026-04-29T09:07:36 IST" duration-ms="5245" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="calculateHomeLoan()[pri:0, instance:test.TestMain@489115ef]" started-at="2026-05-05T12:11:15 IST" name="calculateHomeLoan" finished-at="2026-05-05T12:11:27 IST" duration-ms="11312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculateHomeLoan -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:homeloan_hdfc.Test_HomeLoan@2f4948e4]" started-at="2026-04-29T09:07:36 IST" name="tearDown" finished-at="2026-04-29T09:07:41 IST" duration-ms="5136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TestMain@489115ef]" started-at="2026-05-05T12:11:27 IST" name="tearDown" finished-at="2026-05-05T12:11:30 IST" duration-ms="3522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- homeloan_hdfc.Test_HomeLoan -->
+      </class> <!-- test.TestMain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
