@@ -70,7 +70,7 @@
 
 
 
-package test;
+package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -82,7 +82,7 @@ import browserImplementation.BrowserConfig;
 import pages.LoanCalcPage;
 import utils.*;
 
-public class TestMain {
+public class TestMain extends BaseTest{
     private WebDriver driver;
     private BrowserConfig browserconf;
     private LoanCalcPage loanPage;
@@ -98,20 +98,20 @@ public class TestMain {
         extent = new ExtentReports();
         extent.attachReporter(spark);
 
-        browserconf = new BrowserConfig();
-        driver = browserconf.chooseBrowser(); //
+//        browserconf = new BrowserConfig();
+//        driver = browserconf.chooseBrowser(); //
         objReader = new ObjectReader(); //
-        loanPage = new LoanCalcPage(driver);
+//        loanPage = new LoanCalcPage(driver);
 
     }
 
     // TEST 1: System Readiness & UI Cleanup
     @Test(priority = 1)
     public void testHomeLoanPageurl() {
+    	 	System.out.println("driver"+driver);
         test = extent.createTest("Test 1: Navigation and UI Cleanup");
         try {
             driver.get(objReader.geturl());
-          
            
             test.pass("Navigated to HDFC Home Loan");
         } catch (Exception e) {

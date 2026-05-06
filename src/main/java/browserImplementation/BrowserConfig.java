@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserConfig {
 	
-	private WebDriver driver;
+	protected WebDriver driver;
 
 	/**
 	 * Initializes the WebDriver, maximizes the window, and returns the driver instance.

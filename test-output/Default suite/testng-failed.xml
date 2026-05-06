@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FixeddepositTest">
+      <class name="tests.TestMain">
         <methods>
-          <include name="depositeDropDownTest"/>
-          <include name="setUpDriver"/>
-          <include name="dateTest"/>
-          <include name="initilizeDriver"/>
+          <include name="tearDown"/>
+          <include name="testInputUpdateValidation"/>
+          <include name="setUp"/>
+          <include name="testHomeLoanPageurl"/>
+          <include name="testHomeLoanCalculation"/>
+          <include name="testExcelDataExport"/>
           <include name="tearDownDriver"/>
         </methods>
-      </class> <!-- tests.FixeddepositTest -->
+      </class> <!-- tests.TestMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

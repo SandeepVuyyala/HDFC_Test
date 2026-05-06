@@ -3,22 +3,35 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.TestMain">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testInputUpdateValidation"/>
+          <include name="setUp"/>
+          <include name="testHomeLoanPageurl"/>
+          <include name="testHomeLoanCalculation"/>
+          <include name="testExcelDataExport"/>
+          <include name="tearDownDriver"/>
+        </methods>
+      </class> <!-- tests.TestMain -->
       <class name="tests.LandingPageTest">
         <methods>
-          <include name="initilizeDriver"/>
           <include name="testClickOnfixedDeposite"/>
+          <include name="initilizeDriver"/>
           <include name="hoverToDiscoverProducts"/>
-          <include name="setUpDriver"/>
+          <include name="testHomeLoanPageurl"/>
           <include name="tearDownDriver"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.LandingPageTest -->
       <class name="tests.FixeddepositTest">
         <methods>
+          <include name="testHomeLoanPageurl"/>
           <include name="depositeDropDownTest"/>
-          <include name="setUpDriver"/>
           <include name="dateTest"/>
           <include name="initilizeDriver"/>
           <include name="tearDownDriver"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.FixeddepositTest -->
     </classes>

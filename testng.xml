@@ -4,8 +4,10 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
+            
             <class name="tests.LandingPageTest"/>
             <class name="tests.FixeddepositTest"/>
+            <class name="tests.TestMain"/>
         </classes>
     </test>
 </suite>
