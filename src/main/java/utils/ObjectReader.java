@@ -20,7 +20,8 @@ public class ObjectReader {
         }  finally {
             try {
 				fis.close();
-			} catch (IOException e) {
+			} 
+            catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
