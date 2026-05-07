@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HDFC Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Insurance and Loan Tests(failed)">
+    <classes>
+      <class name="test.TestMain">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="testMultipleInputScenarios"/>
+          <include name="setUpReports"/>
+          <include name="testHomeLoanPageurl"/>
+          <include name="tearDownReport"/>
+          <include name="testHomeLoanCalculation"/>
+        </methods>
+      </class> <!-- test.TestMain -->
+      <class name="test.SipTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="findingElements"/>
+          <include name="enterValues"/>
+          <include name="setUpPages"/>
+          <include name="printValues"/>
+          <include name="navigatingToSip"/>
+        </methods>
+      </class> <!-- test.SipTest -->
+    </classes>
+  </test> <!-- Insurance and Loan Tests(failed) -->
+</suite> <!-- Failed suite [HDFC Automation Suite] -->

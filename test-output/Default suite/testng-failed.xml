@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.HomeLoanEligibilityTest">
+        <methods>
+          <include name="enterValues"/>
+          <include name="setUp"/>
+          <include name="CaptureResults"/>
+          <include name="navigatingToHomeLoanEligibility"/>
+          <include name="globalTeardown"/>
+          <include name="findingElements"/>
+          <include name="globalSetup"/>
+        </methods>
+      </class> <!-- test.HomeLoanEligibilityTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

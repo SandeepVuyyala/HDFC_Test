@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  Full Banking Flow</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Full Banking Flow</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 07 11:08:01 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>99 seconds (99396 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.SipTest.printValues()'><b>printValues</b><br>Test class: test.SipTest</td>
+<td></td>
+<td>0</td>
+<td>test.SipTest@7817fd62</td></tr>
+<tr>
+<td title='test.HomeLoanTest.testMultipleInputScenarios()'><b>testMultipleInputScenarios</b><br>Test class: test.HomeLoanTest</td>
+<td></td>
+<td>10</td>
+<td>test.HomeLoanTest@2362f559</td></tr>
+<tr>
+<td title='test.SipTest.navigatingToSip()'><b>navigatingToSip</b><br>Test class: test.SipTest</td>
+<td></td>
+<td>2</td>
+<td>test.SipTest@7817fd62</td></tr>
+<tr>
+<td title='test.LandingPageTest.testClickOnfixedDeposite()'><b>testClickOnfixedDeposite</b><br>Test class: test.LandingPageTest</td>
+<td></td>
+<td>12</td>
+<td>test.LandingPageTest@2925bf5b</td></tr>
+<tr>
+<td title='test.CarLoanTest.enterValues()'><b>enterValues</b><br>Test class: test.CarLoanTest</td>
+<td></td>
+<td>2</td>
+<td>test.CarLoanTest@8297b3a</td></tr>
+<tr>
+<td title='test.HomeLoanTest.testHomeLoanCalculation()'><b>testHomeLoanCalculation</b><br>Test class: test.HomeLoanTest</td>
+<td></td>
+<td>3</td>
+<td>test.HomeLoanTest@2362f559</td></tr>
+<tr>
+<td title='test.FixedDepositTest.dateTest()'><b>dateTest</b><br>Test class: test.FixedDepositTest</td>
+<td></td>
+<td>3</td>
+<td>test.FixedDepositTest@510f3d34</td></tr>
+<tr>
+<td title='test.CarLoanTest.navigatingToCarLoan()'><b>navigatingToCarLoan</b><br>Test class: test.CarLoanTest</td>
+<td></td>
+<td>1</td>
+<td>test.CarLoanTest@8297b3a</td></tr>
+<tr>
+<td title='test.FixedDepositTest.depositeDropDownTest()'><b>depositeDropDownTest</b><br>Test class: test.FixedDepositTest</td>
+<td></td>
+<td>23</td>
+<td>test.FixedDepositTest@510f3d34</td></tr>
+<tr>
+<td title='test.CarLoanTest.findingElements()'><b>findingElements</b><br>Test class: test.CarLoanTest</td>
+<td></td>
+<td>0</td>
+<td>test.CarLoanTest@8297b3a</td></tr>
+<tr>
+<td title='test.HomeLoanEligibilityTest.navigatingToHomeLoanEligibility()'><b>navigatingToHomeLoanEligibility</b><br>Test class: test.HomeLoanEligibilityTest</td>
+<td></td>
+<td>2</td>
+<td>test.HomeLoanEligibilityTest@b2c9a9c</td></tr>
+<tr>
+<td title='test.HomeLoanTest.testHomeLoanPageurl()'><b>testHomeLoanPageurl</b><br>Test class: test.HomeLoanTest</td>
+<td></td>
+<td>1</td>
+<td>test.HomeLoanTest@2362f559</td></tr>
+<tr>
+<td title='test.CarLoanTest.printValues()'><b>printValues</b><br>Test class: test.CarLoanTest</td>
+<td></td>
+<td>0</td>
+<td>test.CarLoanTest@8297b3a</td></tr>
+<tr>
+<td title='test.HomeLoanEligibilityTest.enterValues()'><b>enterValues</b><br>Test class: test.HomeLoanEligibilityTest</td>
+<td></td>
+<td>7</td>
+<td>test.HomeLoanEligibilityTest@b2c9a9c</td></tr>
+<tr>
+<td title='test.SipTest.findingElements()'><b>findingElements</b><br>Test class: test.SipTest</td>
+<td></td>
+<td>0</td>
+<td>test.SipTest@7817fd62</td></tr>
+<tr>
+<td title='test.SipTest.enterValues()'><b>enterValues</b><br>Test class: test.SipTest</td>
+<td></td>
+<td>11</td>
+<td>test.SipTest@7817fd62</td></tr>
+<tr>
+<td title='test.HomeLoanEligibilityTest.CaptureResults()'><b>CaptureResults</b><br>Test class: test.HomeLoanEligibilityTest</td>
+<td></td>
+<td>0</td>
+<td>test.HomeLoanEligibilityTest@b2c9a9c</td></tr>
+<tr>
+<td title='test.LandingPageTest.hoverToDiscoverProducts()'><b>hoverToDiscoverProducts</b><br>Test class: test.LandingPageTest</td>
+<td></td>
+<td>15</td>
+<td>test.LandingPageTest@2925bf5b</td></tr>
+<tr>
+<td title='test.HomeLoanEligibilityTest.findingElements()'><b>findingElements</b><br>Test class: test.HomeLoanEligibilityTest</td>
+<td></td>
+<td>0</td>
+<td>test.HomeLoanEligibilityTest@b2c9a9c</td></tr>
+</table><p>
+</body>
+</html>

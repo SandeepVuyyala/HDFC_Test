@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-07T11:08:01 IST" name="HDFC End-to-End Suite" finished-at="2026-05-07T11:09:40 IST" duration-ms="99396">
+    <groups>
+    </groups>
+    <test started-at="2026-05-07T11:08:01 IST" name="Full Banking Flow" finished-at="2026-05-07T11:09:40 IST" duration-ms="99396">
+      <class name="test.LandingPageTest">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:test.LandingPageTest@2925bf5b]" started-at="2026-05-07T11:07:56 IST" name="globalSetup" finished-at="2026-05-07T11:08:01 IST" duration-ms="5080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:test.LandingPageTest@2925bf5b]" started-at="2026-05-07T11:08:01 IST" name="initializeDriver" finished-at="2026-05-07T11:08:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="hoverToDiscoverProducts()[pri:1, instance:test.LandingPageTest@2925bf5b]" started-at="2026-05-07T11:08:01 IST" name="hoverToDiscoverProducts" finished-at="2026-05-07T11:08:16 IST" duration-ms="15141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverToDiscoverProducts -->
+        <test-method signature="testClickOnfixedDeposite()[pri:2, instance:test.LandingPageTest@2925bf5b]" started-at="2026-05-07T11:08:16 IST" name="testClickOnfixedDeposite" finished-at="2026-05-07T11:08:29 IST" depends-on-methods="test.LandingPageTest.hoverToDiscoverProducts" duration-ms="12628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickOnfixedDeposite -->
+        <test-method is-config="true" signature="globalTeardown()[pri:0, instance:test.LandingPageTest@2925bf5b]" started-at="2026-05-07T11:09:41 IST" name="globalTeardown" finished-at="2026-05-07T11:09:42 IST" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalTeardown -->
+      </class> <!-- test.LandingPageTest -->
+      <class name="test.HomeLoanTest">
+        <test-method signature="testHomeLoanPageurl()[pri:13, instance:test.HomeLoanTest@2362f559]" started-at="2026-05-07T11:09:14 IST" name="testHomeLoanPageurl" finished-at="2026-05-07T11:09:16 IST" duration-ms="1784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeLoanPageurl -->
+        <test-method is-config="true" signature="setUpChild()[pri:0, instance:test.HomeLoanTest@2362f559]" started-at="2026-05-07T11:09:14 IST" name="setUpChild" finished-at="2026-05-07T11:09:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpChild -->
+        <test-method signature="testHomeLoanCalculation()[pri:14, instance:test.HomeLoanTest@2362f559]" started-at="2026-05-07T11:09:16 IST" name="testHomeLoanCalculation" finished-at="2026-05-07T11:09:20 IST" depends-on-methods="test.HomeLoanTest.testHomeLoanPageurl" duration-ms="3707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeLoanCalculation -->
+        <test-method signature="testMultipleInputScenarios()[pri:15, instance:test.HomeLoanTest@2362f559]" started-at="2026-05-07T11:09:20 IST" name="testMultipleInputScenarios" finished-at="2026-05-07T11:09:30 IST" depends-on-methods="test.HomeLoanTest.testHomeLoanCalculation" duration-ms="10159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleInputScenarios -->
+      </class> <!-- test.HomeLoanTest -->
+      <class name="test.SipTest">
+        <test-method signature="navigatingToSip()[pri:5, instance:test.SipTest@7817fd62]" started-at="2026-05-07T11:08:56 IST" name="navigatingToSip" finished-at="2026-05-07T11:08:59 IST" duration-ms="2581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToSip -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:test.SipTest@7817fd62]" started-at="2026-05-07T11:08:56 IST" name="setUpPages" finished-at="2026-05-07T11:08:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="findingElements()[pri:6, instance:test.SipTest@7817fd62]" started-at="2026-05-07T11:08:59 IST" name="findingElements" finished-at="2026-05-07T11:08:59 IST" depends-on-methods="test.SipTest.navigatingToSip" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="enterValues()[pri:7, instance:test.SipTest@7817fd62]" started-at="2026-05-07T11:08:59 IST" name="enterValues" finished-at="2026-05-07T11:09:11 IST" depends-on-methods="test.SipTest.findingElements" duration-ms="11981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="printValues()[pri:8, instance:test.SipTest@7817fd62]" started-at="2026-05-07T11:09:11 IST" name="printValues" finished-at="2026-05-07T11:09:11 IST" depends-on-methods="test.SipTest.enterValues" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printValues -->
+      </class> <!-- test.SipTest -->
+      <class name="test.FixedDepositTest">
+        <test-method is-config="true" signature="initilizeDriver()[pri:0, instance:test.FixedDepositTest@510f3d34]" started-at="2026-05-07T11:08:29 IST" name="initilizeDriver" finished-at="2026-05-07T11:08:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method signature="depositeDropDownTest()[pri:3, instance:test.FixedDepositTest@510f3d34]" started-at="2026-05-07T11:08:29 IST" name="depositeDropDownTest" finished-at="2026-05-07T11:08:52 IST" duration-ms="23444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositeDropDownTest -->
+        <test-method signature="dateTest()[pri:4, instance:test.FixedDepositTest@510f3d34]" started-at="2026-05-07T11:08:52 IST" name="dateTest" finished-at="2026-05-07T11:08:56 IST" depends-on-methods="test.FixedDepositTest.depositeDropDownTest" duration-ms="3640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateTest -->
+      </class> <!-- test.FixedDepositTest -->
+      <class name="test.HomeLoanEligibilityTest">
+        <test-method is-config="true" signature="setUpChild()[pri:0, instance:test.HomeLoanEligibilityTest@b2c9a9c]" started-at="2026-05-07T11:09:30 IST" name="setUpChild" finished-at="2026-05-07T11:09:30 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpChild -->
+        <test-method signature="navigatingToHomeLoanEligibility()[pri:16, instance:test.HomeLoanEligibilityTest@b2c9a9c]" started-at="2026-05-07T11:09:30 IST" name="navigatingToHomeLoanEligibility" finished-at="2026-05-07T11:09:32 IST" duration-ms="2350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToHomeLoanEligibility -->
+        <test-method signature="findingElements()[pri:17, instance:test.HomeLoanEligibilityTest@b2c9a9c]" started-at="2026-05-07T11:09:32 IST" name="findingElements" finished-at="2026-05-07T11:09:33 IST" depends-on-methods="test.HomeLoanEligibilityTest.navigatingToHomeLoanEligibility" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="enterValues()[pri:18, instance:test.HomeLoanEligibilityTest@b2c9a9c]" started-at="2026-05-07T11:09:33 IST" name="enterValues" finished-at="2026-05-07T11:09:40 IST" depends-on-methods="test.HomeLoanEligibilityTest.findingElements" duration-ms="7962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="CaptureResults()[pri:19, instance:test.HomeLoanEligibilityTest@b2c9a9c]" started-at="2026-05-07T11:09:40 IST" name="CaptureResults" finished-at="2026-05-07T11:09:40 IST" depends-on-methods="test.HomeLoanEligibilityTest.enterValues" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureResults -->
+      </class> <!-- test.HomeLoanEligibilityTest -->
+      <class name="test.CarLoanTest">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:test.CarLoanTest@8297b3a]" started-at="2026-05-07T11:09:11 IST" name="setUpPages" finished-at="2026-05-07T11:09:11 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="navigatingToCarLoan()[pri:15, instance:test.CarLoanTest@8297b3a]" started-at="2026-05-07T11:09:11 IST" name="navigatingToCarLoan" finished-at="2026-05-07T11:09:12 IST" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToCarLoan -->
+        <test-method signature="enterValues()[pri:17, instance:test.CarLoanTest@8297b3a]" started-at="2026-05-07T11:09:12 IST" name="enterValues" finished-at="2026-05-07T11:09:14 IST" depends-on-methods="test.CarLoanTest.findingElements" duration-ms="2349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="findingElements()[pri:16, instance:test.CarLoanTest@8297b3a]" started-at="2026-05-07T11:09:12 IST" name="findingElements" finished-at="2026-05-07T11:09:12 IST" depends-on-methods="test.CarLoanTest.navigatingToCarLoan" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="printValues()[pri:18, instance:test.CarLoanTest@8297b3a]" started-at="2026-05-07T11:09:14 IST" name="printValues" finished-at="2026-05-07T11:09:14 IST" depends-on-methods="test.CarLoanTest.enterValues" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printValues -->
+      </class> <!-- test.CarLoanTest -->
+    </test> <!-- Full Banking Flow -->
+  </suite> <!-- HDFC End-to-End Suite -->
+</testng-results>

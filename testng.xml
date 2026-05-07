@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HDFC End-to-End Suite">
+  <test name="Full Banking Flow">
+    <classes>
+      <class name="test.LandingPageTest"/>
+      <class name="test.FixedDepositTest"/>
+      <class name="test.SipTest"/>
+      <class name="test.CarLoanTest"/>
+      <class name="test.HomeLoanTest"/>
+      <class name="test.HomeLoanEligibilityTest"/>
+    </classes>
+  </test>
+</suite>
