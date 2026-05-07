@@ -27,6 +27,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
@@ -37,7 +38,7 @@ public class BaseTest {
     protected static WebDriver driver;
     protected static ExtentReports extent;
     protected static ExtentSparkReporter spark;
-
+  
     @BeforeSuite
     public void globalSetup() {
         // 1. Initialize Report
@@ -48,6 +49,7 @@ public class BaseTest {
         // 2. Initialize Single Browser Instance
         if (driver == null) {
             driver = new ChromeDriver();
+           
             driver.manage().window().maximize();
         }
     }

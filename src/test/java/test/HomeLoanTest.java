@@ -1,5 +1,6 @@
 package test;
 
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentTest;
@@ -18,10 +19,12 @@ public class HomeLoanTest extends BaseTest {
     private ExtentTest test;
 
     @BeforeClass
-    public void setUpChild() {
+    public void setUp() {
         objReader = new ObjectReader();
         // Uses the existing driver from the single browser session
         loanPage = new LoanCalcPage(driver);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
     }
 
     @Test(priority = 13) // Continued priority from SipTest

@@ -38,6 +38,7 @@ public class LoanCalcPage {
         updateFieldViaJS(By.id(objReader.getObjectValue("rate")), rate);
     }
 
+    
     private void updateFieldViaJS(By locator, String value) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         JavascriptExecutor jse = (JavascriptExecutor) driver;

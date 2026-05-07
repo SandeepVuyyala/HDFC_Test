@@ -32,6 +32,7 @@
 
 package test;
 
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.FixedDeposit;
@@ -45,6 +46,8 @@ public class FixedDepositTest extends BaseTest {
     public void initilizeDriver() {
         // Inherits the 'driver' initialized in BaseTest
         fixedropdown = new FixedDeposit(driver);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
     }
 
     @Test(priority=3) // Priority follows LandingPageTest (1, 2)

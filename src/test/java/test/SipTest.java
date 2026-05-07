@@ -62,6 +62,7 @@ package test;
 
 import java.io.IOException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.SipPage;
@@ -74,7 +75,10 @@ public class SipTest extends BaseTest {
     
     @BeforeClass
     public void setUpPages() {
-        sipPage = new SipPage();
+        sipPage = new SipPage(driver);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        
     }
     
     @Test(priority=5)
@@ -90,7 +94,7 @@ public class SipTest extends BaseTest {
     
     @Test(priority=6, dependsOnMethods="navigatingToSip")
     public void findingElements() {
-        sipPage.setElements(driver);
+        sipPage.setElements();
     }
     
     @Test(priority=7, dependsOnMethods="findingElements")

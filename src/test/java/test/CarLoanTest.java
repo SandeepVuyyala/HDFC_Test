@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -30,6 +31,8 @@ public class CarLoanTest extends BaseTest {
         test = extent.createTest("Car Loan: Navigation");
         // Navigate in the same browser window
         driver.get("https://www.hdfc.bank.in/car-loan/emi-calculator");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
         jse.executeScript("window.scrollBy(0,600);");
         test.pass("Navigated to Car Loan EMI Calculator.");
     }

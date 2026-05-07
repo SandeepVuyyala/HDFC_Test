@@ -1,6 +1,7 @@
 package test; // Ensure this matches your project folder structure
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.HomeLoanEligibility;
@@ -11,9 +12,11 @@ public class HomeLoanEligibilityTest extends BaseTest {
     HomeLoanEligibility homeLoanPage;
 
     @BeforeClass
-    public void setUpChild() {
+    public void setUp() {
         // Initialize the page object using the refactored constructor
         homeLoanPage = new HomeLoanEligibility(driver);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
     }
 
     @Test(priority = 16) // Priority follows CarLoan (12-15)

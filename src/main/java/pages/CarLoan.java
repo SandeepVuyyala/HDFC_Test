@@ -37,6 +37,8 @@ public class CarLoan {
         String interestAmount = driver.findElement(By.id("carLoanNewFixedEmiResult")).getText();
         String totalAmount = driver.findElement(By.id("carLoanNewPFixedTotalAmount")).getText();
 
+        
+        System.out.println("----------CarLoanDetails-------");
         System.out.println("Monthly EMI     : " + monthlyEmi);
         System.out.println("Interest Amount : " + interestAmount);
         System.out.println("Amount Payable  : " + totalAmount);
@@ -51,7 +53,7 @@ public class CarLoan {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         // 1. Scroll the element into view center
-        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", ele);
+        //js.executeScript("arguments[0].scrollIntoView({block: 'center'});", ele);
         
         // 2. Clear and set value directly via JS
         js.executeScript("arguments[0].value = '" + value + "';", ele);
