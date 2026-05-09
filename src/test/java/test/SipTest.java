@@ -19,6 +19,7 @@ public class SipTest extends BaseTest {
     SipPage sipPage;
     ExtentTest test;
     
+    private final String SIPTest_URL = "https://www.hdfc.bank.in/mutual-funds/sip-calculator";
     @BeforeClass
     public void setUpPages() {
         sipPage = new SipPage(driver);
@@ -28,13 +29,13 @@ public class SipTest extends BaseTest {
     @Test(priority=5)
     public void navigatingToSip() throws InterruptedException, IOException {
         test = extent.createTest("SIP Test: Navigation");
-        driver.get("https://www.hdfc.bank.in/mutual-funds/sip-calculator");
+        driver.get(SIPTest_URL);
         
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
         Thread.sleep(2000);
         test.pass("Navigated to SIP Calculator");
-        test.addScreenCaptureFromPath(ScreenshotUtil.capturePage(driver, "Successfully navigated to Sip"));
+        test.addScreenCaptureFromPath(ScreenshotUtil.capturePage(driver, "Successfully navigated to Sip Page"));
     }
     
     @Test(priority=6, dependsOnMethods="navigatingToSip")

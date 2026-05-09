@@ -3,17 +3,14 @@
 <suite name="Failed suite [HDFC End-to-End Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Full Banking Flow(failed)">
     <classes>
-      <class name="test.HomeLoanEligibilityTest">
+      <class name="test.FixedDepositTest">
         <methods>
-          <include name="enterValues"/>
-          <include name="CaptureResults"/>
-          <include name="navigatingToHomeLoanEligibility"/>
-          <include name="setUp"/>
+          <include name="initilizeDriver"/>
           <include name="globalTeardown"/>
-          <include name="findingElements"/>
+          <include name="testFixed_deposite"/>
           <include name="globalSetup"/>
         </methods>
-      </class> <!-- test.HomeLoanEligibilityTest -->
+      </class> <!-- test.FixedDepositTest -->
     </classes>
   </test> <!-- Full Banking Flow(failed) -->
 </suite> <!-- Failed suite [HDFC End-to-End Suite] -->

@@ -7,23 +7,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.ObjectReader;
 
-public class LoanCalcPage {
+public class HomeLoanCalcPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
-    private ObjectReader objReader;
 
-    public LoanCalcPage(WebDriver driver) {
+    // Locators moved from ObjectRepo to Page Class using By
+    private By calcHeading = By.xpath("//h2[contains(@class, 'cmp-title__text') and contains(text(), 'Calculate Your Home Loan')]");
+    private By loanAmtInput = By.id("loan-amt-inp");
+    private By tenureInput = By.id("tenure-inp");
+    private By rateInput = By.id("rate-inp");
+    private By emiDisplay = By.id("monthly-emi");
+    private By interestDisplay = By.id("interest-amt");
+    private By principalDisplay = By.id("principal-amt");
+
+    public HomeLoanCalcPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        this.objReader = new ObjectReader(); 
     }
 
-  
     public void scrollToHeader() {
-        WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(objReader.getObjectValue("calcHeading"))));
+        WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(calcHeading));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].scrollIntoView(true);", header);
     }
@@ -32,13 +37,12 @@ public class LoanCalcPage {
         // Perform the precise scroll first
         scrollToHeader();
         
-        // Logic remains consistent with your framework's ObjectReader usage
-        updateFieldViaJS(By.id(objReader.getObjectValue("loanAmt")), amt);
-        updateFieldViaJS(By.id(objReader.getObjectValue("tenure")), tenure);
-        updateFieldViaJS(By.id(objReader.getObjectValue("rate")), rate);
+        // Use the By locators directly
+        updateFieldViaJS(loanAmtInput, amt);
+        updateFieldViaJS(tenureInput, tenure);
+        updateFieldViaJS(rateInput, rate);
     }
 
-    
     private void updateFieldViaJS(By locator, String value) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -48,14 +52,14 @@ public class LoanCalcPage {
     }
 
     public String getMonthlyEMI() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(objReader.getObjectValue("emiDisplay")))).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(emiDisplay)).getText();
     }
 
     public String getTotalInterest() {
-        return driver.findElement(By.id(objReader.getObjectValue("interestDisplay"))).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(interestDisplay)).getText();
     }
 
     public String getPrincipalAmount() {
-        return driver.findElement(By.id(objReader.getObjectValue("principalDisplay"))).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(principalDisplay)).getText();
     }
 }

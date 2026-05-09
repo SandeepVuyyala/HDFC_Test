@@ -18,7 +18,7 @@ public class CarLoanTest extends BaseTest {
     JavascriptExecutor jse;
     WebDriverWait wait;
     ExtentTest test;
-
+    private final String CAR_LOAN_URL = "https://www.hdfc.bank.in/car-loan/emi-calculator";
     @BeforeClass
     public void setUpPages() {
         // Use the driver inherited from BaseTest
@@ -31,7 +31,7 @@ public class CarLoanTest extends BaseTest {
     public void navigatingToCarLoan(){
         test = extent.createTest("Car Loan: Navigation");
         // Navigate in the same browser window
-        driver.get("https://www.hdfc.bank.in/car-loan/emi-calculator");
+        driver.get(CAR_LOAN_URL);
       
         jse.executeScript("window.scrollBy(0,600);");
         test.pass("Navigated to Car Loan EMI Calculator.");
