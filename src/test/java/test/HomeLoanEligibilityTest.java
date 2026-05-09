@@ -15,8 +15,7 @@ public class HomeLoanEligibilityTest extends BaseTest {
     public void setUp() {
         // Initialize the page object using the refactored constructor
         homeLoanPage = new HomeLoanEligibility(driver);
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
+       
     }
 
     @Test(priority = 16) // Priority follows CarLoan (12-15)

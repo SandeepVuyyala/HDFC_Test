@@ -7,8 +7,9 @@ import java.io.IOException;
 
 public class ScreenshotUtil {
 
+	//(System.currentTimeMillis() % 100)
     public static String capturePage(WebDriver driver, String fileName) {
-        String name = fileName + "_" + (System.currentTimeMillis() % 100) + ".png";
+        String name = fileName + "_" +  ".png";
         String savePath = System.getProperty("user.dir") + "/screenshots/" + name;
 
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

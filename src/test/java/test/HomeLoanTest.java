@@ -1,5 +1,6 @@
 package test;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -23,8 +24,6 @@ public class HomeLoanTest extends BaseTest {
         objReader = new ObjectReader();
         // Uses the existing driver from the single browser session
         loanPage = new LoanCalcPage(driver);
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
     }
 
     @Test(priority = 13) // Continued priority from SipTest
@@ -33,6 +32,7 @@ public class HomeLoanTest extends BaseTest {
         try {
             driver.get(objReader.geturl());
             test.pass("Navigated to Home Loan site in the same browser.");
+            test.addScreenCaptureFromPath(ScreenshotUtil.capturePage(driver, "Navigated to HomeLoan Page Successfully"));
         } catch (Exception e) {
             test.fail("Failed to open URL: " + e.getMessage());
             Assert.fail();
@@ -58,38 +58,40 @@ public class HomeLoanTest extends BaseTest {
     @Test(priority = 15, dependsOnMethods = "testHomeLoanCalculation")
     public void testMultipleInputScenarios() {
         test = extent.createTest("Loan Test: Multi-Scenario Export");
-        List<Map<String, String>> allResults = new ArrayList<>();
         
         String[][] testData = {
-        	    {"350000", "4", "8.5"}, 
-        	    {"4250000", "10", "7.1"}, 
-        	    {"1200000", "10", "9.25"}, 
-        	    {"2500000", "15", "8.5"}
+            {"350000", "4", "8.5"}, 
+            {"4250000", "10", "7.1"}, 
+            {"1200000", "10", "9.25"}, 
+            {"2500000", "15", "8.5"}
         };
 
-        for (int i = 0; i < testData.length; i++) {
-            String amt = testData[i][0];
-            String tenure = testData[i][1];
-            String rate = testData[i][2];
+        // Prepare a result grid (Rows = same as test data, Columns = 5)
+        String[][] resultsToExport = new String[testData.length][5];
 
+        for (int i = 0; i < testData.length; i++) {
             try {
-                loanPage.enterLoanDetails(amt, tenure, rate);
+                loanPage.enterLoanDetails(testData[i][0], testData[i][1], testData[i][2]);
                 Thread.sleep(2000); 
                 
-                // Create the map and add ALL columns
-                Map<String, String> data = new HashMap<>();
-                data.put("Amount", amt);
-                data.put("Tenure", tenure);
-                data.put("Rate", rate);
-                data.put("EMI", loanPage.getMonthlyEMI());
-                data.put("Interest", loanPage.getTotalInterest()); // Ensure this method exists in your page class
+                // Fill row only on success
+                resultsToExport[i][0] = testData[i][0];              // Amount
+                resultsToExport[i][1] = testData[i][2];              // Interest Rate
+                resultsToExport[i][2] = testData[i][1];              // Tenure
+                resultsToExport[i][3] = loanPage.getMonthlyEMI();    // EMI
+                resultsToExport[i][4] = loanPage.getTotalInterest(); // Interest
                 
-                allResults.add(data);
-                test.log(Status.INFO, "TestCase " + (i + 1) + " completed.");
+                test.log(Status.PASS, "Scenario " + (i + 1) + " recorded.");
             } catch (Exception e) {
-                test.log(Status.FAIL, "Error in TestCase " + (i + 1));
+                test.log(Status.FAIL, "Scenario " + (i + 1) + " failed: " + e.getMessage());
+                // resultToExport[i] stays null/empty here
             }
         }
-        ExcelWriter.storeResultsInExcel(allResults);
+
+        try {
+            ExcelWriter.storeResultsInExcel(resultsToExport);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

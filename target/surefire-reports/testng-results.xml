@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="17" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-08T15:33:41 IST" name="Surefire suite" finished-at="2026-05-08T15:34:45 IST" duration-ms="63959">
+    <groups>
+    </groups>
+    <test started-at="2026-05-08T15:33:41 IST" name="Surefire test" finished-at="2026-05-08T15:34:45 IST" duration-ms="63959">
+      <class name="test.LandingPageTest">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:test.LandingPageTest@47d90b9e]" started-at="2026-05-08T15:34:12 IST" name="initializeDriver" finished-at="2026-05-08T15:34:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="hoverToDiscoverProducts()[pri:1, instance:test.LandingPageTest@47d90b9e]" started-at="2026-05-08T15:34:12 IST" name="hoverToDiscoverProducts" finished-at="2026-05-08T15:34:21 IST" duration-ms="9350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverToDiscoverProducts -->
+        <test-method signature="testClickOnfixedDeposite()[pri:2, instance:test.LandingPageTest@47d90b9e]" started-at="2026-05-08T15:34:21 IST" name="testClickOnfixedDeposite" finished-at="2026-05-08T15:34:32 IST" depends-on-methods="test.LandingPageTest.hoverToDiscoverProducts" duration-ms="11030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickOnfixedDeposite -->
+      </class> <!-- test.LandingPageTest -->
+      <class name="test.SipTest">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:test.SipTest@1184ab05]" started-at="2026-05-08T15:34:32 IST" name="setUpPages" finished-at="2026-05-08T15:34:32 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="navigatingToSip()[pri:5, instance:test.SipTest@1184ab05]" started-at="2026-05-08T15:34:32 IST" name="navigatingToSip" finished-at="2026-05-08T15:34:35 IST" duration-ms="2570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToSip -->
+        <test-method signature="findingElements()[pri:6, instance:test.SipTest@1184ab05]" started-at="2026-05-08T15:34:35 IST" name="findingElements" finished-at="2026-05-08T15:34:35 IST" depends-on-methods="test.SipTest.navigatingToSip" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="enterValues()[pri:7, instance:test.SipTest@1184ab05]" started-at="2026-05-08T15:34:35 IST" name="enterValues" finished-at="2026-05-08T15:34:45 IST" depends-on-methods="test.SipTest.findingElements" duration-ms="9887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="printValues()[pri:8, instance:test.SipTest@1184ab05]" started-at="2026-05-08T15:34:45 IST" name="printValues" finished-at="2026-05-08T15:34:45 IST" depends-on-methods="test.SipTest.enterValues" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printValues -->
+      </class> <!-- test.SipTest -->
+      <class name="test.HomeLoanTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HomeLoanTest@460d0a57]" started-at="2026-05-08T15:33:58 IST" name="setUp" finished-at="2026-05-08T15:33:58 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHomeLoanPageurl()[pri:13, instance:test.HomeLoanTest@460d0a57]" started-at="2026-05-08T15:33:58 IST" name="testHomeLoanPageurl" finished-at="2026-05-08T15:33:59 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeLoanPageurl -->
+        <test-method signature="testHomeLoanCalculation()[pri:14, instance:test.HomeLoanTest@460d0a57]" started-at="2026-05-08T15:33:59 IST" name="testHomeLoanCalculation" finished-at="2026-05-08T15:34:02 IST" depends-on-methods="test.HomeLoanTest.testHomeLoanPageurl" duration-ms="3494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeLoanCalculation -->
+        <test-method signature="testMultipleInputScenarios()[pri:15, instance:test.HomeLoanTest@460d0a57]" started-at="2026-05-08T15:34:02 IST" name="testMultipleInputScenarios" finished-at="2026-05-08T15:34:12 IST" depends-on-methods="test.HomeLoanTest.testHomeLoanCalculation" duration-ms="9718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleInputScenarios -->
+      </class> <!-- test.HomeLoanTest -->
+      <class name="test.FixedDepositTest">
+        <test-method is-config="true" signature="initilizeDriver()[pri:0, instance:test.FixedDepositTest@7f552bd3]" started-at="2026-05-08T15:33:48 IST" name="initilizeDriver" finished-at="2026-05-08T15:33:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method signature="depositeDropDownTest()[pri:3, instance:test.FixedDepositTest@7f552bd3]" started-at="2026-05-08T15:33:48 IST" name="depositeDropDownTest" finished-at="2026-05-08T15:33:48 IST" duration-ms="21" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".fixed\-select\-btn"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebe10bf04beb81fff047be00c76bf72f, findElement {using=class name, value=fixed-select-btn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2478499\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54861}, goog:processID: 22812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54861/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebe10bf04beb81fff047be00c76bf72f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".fixed\-select\-btn"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebe10bf04beb81fff047be00c76bf72f, findElement {using=class name, value=fixed-select-btn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2478499\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54861}, goog:processID: 22812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54861/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebe10bf04beb81fff047be00c76bf72f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at pages.FixedDeposit.depositeDropDown(FixedDeposit.java:24)
+at test.FixedDepositTest.depositeDropDownTest(FixedDepositTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositeDropDownTest -->
+        <test-method signature="dateTest()[pri:4, instance:test.FixedDepositTest@7f552bd3]" started-at="2026-05-08T15:33:48 IST" name="dateTest" finished-at="2026-05-08T15:33:48 IST" depends-on-methods="test.FixedDepositTest.depositeDropDownTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test.FixedDepositTest.dateTest() on instance test.FixedDepositTest@7f552bd3 depends on not successfully finished methods 
+[test.FixedDepositTest.depositeDropDownTest() on instance test.FixedDepositTest@7f552bd3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test.FixedDepositTest.dateTest() on instance test.FixedDepositTest@7f552bd3 depends on not successfully finished methods 
+[test.FixedDepositTest.depositeDropDownTest() on instance test.FixedDepositTest@7f552bd3]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateTest -->
+      </class> <!-- test.FixedDepositTest -->
+      <class name="test.HomeLoanEligibilityTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HomeLoanEligibilityTest@3c22fc4c]" started-at="2026-05-08T15:33:48 IST" name="setUp" finished-at="2026-05-08T15:33:48 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigatingToHomeLoanEligibility()[pri:16, instance:test.HomeLoanEligibilityTest@3c22fc4c]" started-at="2026-05-08T15:33:48 IST" name="navigatingToHomeLoanEligibility" finished-at="2026-05-08T15:33:51 IST" duration-ms="2935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToHomeLoanEligibility -->
+        <test-method signature="findingElements()[pri:17, instance:test.HomeLoanEligibilityTest@3c22fc4c]" started-at="2026-05-08T15:33:51 IST" name="findingElements" finished-at="2026-05-08T15:33:51 IST" depends-on-methods="test.HomeLoanEligibilityTest.navigatingToHomeLoanEligibility" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="enterValues()[pri:18, instance:test.HomeLoanEligibilityTest@3c22fc4c]" started-at="2026-05-08T15:33:51 IST" name="enterValues" finished-at="2026-05-08T15:33:58 IST" depends-on-methods="test.HomeLoanEligibilityTest.findingElements" duration-ms="6806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="CaptureResults()[pri:19, instance:test.HomeLoanEligibilityTest@3c22fc4c]" started-at="2026-05-08T15:33:58 IST" name="CaptureResults" finished-at="2026-05-08T15:33:58 IST" depends-on-methods="test.HomeLoanEligibilityTest.enterValues" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureResults -->
+      </class> <!-- test.HomeLoanEligibilityTest -->
+      <class name="test.BaseTest">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:test.BaseTest@1ed1993a]" started-at="2026-05-08T15:33:36 IST" name="globalSetup" finished-at="2026-05-08T15:33:41 IST" duration-ms="4420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="globalTeardown()[pri:0, instance:test.BaseTest@1ed1993a]" started-at="2026-05-08T15:34:45 IST" name="globalTeardown" finished-at="2026-05-08T15:34:47 IST" duration-ms="1702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalTeardown -->
+      </class> <!-- test.BaseTest -->
+      <class name="test.CarLoanTest">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:test.CarLoanTest@3eb7fc54]" started-at="2026-05-08T15:33:41 IST" name="setUpPages" finished-at="2026-05-08T15:33:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="navigatingToCarLoan()[pri:15, instance:test.CarLoanTest@3eb7fc54]" started-at="2026-05-08T15:33:41 IST" name="navigatingToCarLoan" finished-at="2026-05-08T15:33:46 IST" duration-ms="4796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToCarLoan -->
+        <test-method signature="findingElements()[pri:16, instance:test.CarLoanTest@3eb7fc54]" started-at="2026-05-08T15:33:46 IST" name="findingElements" finished-at="2026-05-08T15:33:46 IST" depends-on-methods="test.CarLoanTest.navigatingToCarLoan" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findingElements -->
+        <test-method signature="enterValues()[pri:17, instance:test.CarLoanTest@3eb7fc54]" started-at="2026-05-08T15:33:46 IST" name="enterValues" finished-at="2026-05-08T15:33:48 IST" depends-on-methods="test.CarLoanTest.findingElements" duration-ms="2503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValues -->
+        <test-method signature="printValues()[pri:18, instance:test.CarLoanTest@3eb7fc54]" started-at="2026-05-08T15:33:48 IST" name="printValues" finished-at="2026-05-08T15:33:48 IST" depends-on-methods="test.CarLoanTest.enterValues" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printValues -->
+      </class> <!-- test.CarLoanTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

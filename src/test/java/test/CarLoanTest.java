@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import pages.CarLoan;
+import utils.ScreenshotUtil;
 
 public class CarLoanTest extends BaseTest {
     CarLoan page;
@@ -31,10 +32,10 @@ public class CarLoanTest extends BaseTest {
         test = extent.createTest("Car Loan: Navigation");
         // Navigate in the same browser window
         driver.get("https://www.hdfc.bank.in/car-loan/emi-calculator");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
+      
         jse.executeScript("window.scrollBy(0,600);");
         test.pass("Navigated to Car Loan EMI Calculator.");
+        test.addScreenCaptureFromPath(ScreenshotUtil.capturePage(driver, "Navigated Successfully to Carloan page."));
     }
 
     @Test(priority = 16, dependsOnMethods = "navigatingToCarLoan")
@@ -45,6 +46,8 @@ public class CarLoanTest extends BaseTest {
     @Test(priority = 17, dependsOnMethods = "findingElements")
     public void enterValues() throws InterruptedException {
         page.enterValues();
+        test.pass("Given Inputs to CarLoan");
+        test.addScreenCaptureFromPath(ScreenshotUtil.capturePage(driver, "Values Passed Successfully."));
     }
 
     @Test(priority = 18, dependsOnMethods = "enterValues")

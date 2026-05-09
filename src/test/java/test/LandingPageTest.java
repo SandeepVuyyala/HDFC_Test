@@ -14,8 +14,6 @@ public class LandingPageTest extends BaseTest {
     public void initializeDriver() {
         // Inherited driver is already initialized by @BeforeSuite
         lpage = new LandingPage(driver);
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
     }
 
     @Test(priority=1)

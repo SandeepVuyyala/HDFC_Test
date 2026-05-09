@@ -48,7 +48,9 @@ public class BaseTest {
 
         // 2. Initialize Single Browser Instance
         if (driver == null) {
-            driver = new ChromeDriver();
+        	ChromeOptions options = new ChromeOptions();
+    		options.addArguments("--disable-notifications");
+    		driver = new ChromeDriver(options);
            
             driver.manage().window().maximize();
         }
